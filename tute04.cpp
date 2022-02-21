@@ -14,7 +14,30 @@ Do not modify the main function.*/
 #include <iostream>
 
 long Factorial(int no);
+{
+  int k =1, i;
+   if(num==0)
+   {
+     return k;
+   }
+   else
+   {
+     for(i=1; i<=num; i++)
+     {
+       k = k * i;
+     }
+     return k;
+   }
+}
 long nCr(int n, int r);
+{
+  int ncr_var;
+
+  ncr_var = fact(n) / (fact(r)*fact(n-r));
+
+  return ncr_var;
+}
+
 
 int main() {
   int n, r;
